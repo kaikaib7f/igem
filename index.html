@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent</title>
+    <link rel="stylesheet" href="/igem/styles.css">
+    <link rel="stylesheet" href="/igem/head_style.css">
+</head>
+<body> 
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="🫀心脏器官(120 x 120).png" alt="Logo" height="40px">
+                <h2 class="logo-title">UESTC-iGEM agent-Huang's team</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#first">首页</a></li>
+                    <li><a href="#product-display">产品</a></li>
+                    <li><a href="#database-support">数据库</a></li>
+                    <li><a href="#aboutus">关于我们</a></li>
+                    <li><a href="#contactus">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h1 id="first">项目介绍</h1>
+        <div class="project-intro">
+            <div class="top-section">
+                <div class="intro-text">
+                    <p style="text-indent: 2em;">本项目基于Dify框架，创新性地开发了一款面向合成生物学领域的专家化智能Agent系统。
+                        该智能体深度融合了人工智能技术与合成生物学领域的前沿知识体系，旨在为科研人员提供全方位的智能化研究支持。</p>
+                    <br>
+                    <p style="text-indent: 2em;">系统核心功能涵盖实验方案智能设计、多源异构数据深度分析、文献知识图谱构建与挖掘等关键研究环节，
+                        可显著提升科研工作效率，降低跨学科研究门槛。</p>
+                </div>
+                <div class="intro-image">
+                    <img src="dify_logo_white.png" alt="Dify Logo">
+                </div>
+            </div>
+            
+            <div class="additional-intro">
+                <p style="text-indent: 2em;">在实验设计层面，Agent通过整合海量文献数据与实验案例，能够为研究人员提供最优化的实验方案建议
+                    ，有效规避潜在风险，缩短试错周期。在数据分析方面，系统采用先进的机器学习算法，可对高通量测序数据、
+                    代谢组学数据等多维度生物数据进行智能化处理与深度挖掘，辅助研究人员快速发现潜在规律。
+                    此外，Agent还构建了动态更新的合成生物学知识图谱，支持语义化检索与智能推理，为科研创新提供知识支撑。
+                </p>
+                <br>
+                    <p style="text-indent: 2em;">
+                    本项目的实施将有力推动合成生物学研究的智能化转型，不仅能够提升科研效率，降低研究成本，还可促进学科交叉融合，
+                    为合成生物学领域的技术创新和产业发展提供强有力的智能化支撑平台。通过降低专业技术门槛，该系统也将吸引更多跨领域人才投身合成生物学研究，
+                    进一步推动学科的快速发展。
+                    </p>
+            </div>
+        </div>
+        
+        <div id="product-display" class="iframe-container">
+            <h1>产品展示</h1>
+            <div class="qa-container">
+                <div class="user-question">
+                    <div class="question-box">
+                        <p>染色质重塑在基因表达中的机制是什么？</p>
+                    </div>
+                    <img src="用户头像.png" alt="User Avatar" class="avatar">
+                </div>
+                <div class="ai-response">
+                    <img src="AI头像.png" alt="AI Avatar" class="avatar">
+                    <div class="response-box">
+                        <div class="thinking-box">
+                            <p>💭 用户的问题是关于染色质重塑在基因表达中的机制。首先，我需要回忆一下基础的知识点。染色质重塑属于表观遗传学调控的一部分，
+                                主要涉及核小体结构的改变，进而影响基因的表达。这个过程通常由染色质重塑复合物介导，比如SWI/SNF家族，
+                                他们利用ATP水解释放的能量来改变核小体的位置或结构。可能还需要提到组蛋白修饰，比如乙酰化、甲基化如何影响染色质的紧密程度，
+                                从而促进或抑制转录因子的结合。</p><br>
+                            <p>接下来，用户是中国考研生，可能需要符合考研的标准答案结构，需要覆盖关键概念，并可能涉及国内外教材中的不同表述。
+                                比如，参考《分子生物学》朱玉贤或《细胞生物学》翟中和的内容。此时应该确保回答中的术语准确，符合国内教材的常用术语。</p><br>
+                            <p>然后，调用相关的API补充或验证知识点是否正确。比如使用EBI Ontology Lookup Service查找Gene Ontology中的相关条目，
+                                确保机制描述的准确性。或者用维基百科API补充最新的研究进展。此外，PubMed API可以查找近年的综述文章，确认是否有新的机制被发现，
+                                例如相分离在染色质重塑中的作用，这是近年来的研究热点。</p><br>
+                            <p>还要考虑问题可能的扩展，比如染色质重塑与疾病的关系，或者具体的例子，如DNA损伤修复中的重塑过程，但用户当前的问题集中于机制，
+                                所以需要集中在该部分。同时，回答需结构化，按“3W”模式：
+                                What（定义和基本概念）、Why（其在基因表达调控中的重要性）、How（具体的分子机制）。</p><br>
+                            <p>有没有可能用户希望了解染色质重塑不同类型的机制，如依赖ATP的和不依赖ATP的？
+                                或者是组蛋白修饰与重塑复合物的协同作用？另外，是否应该提到具体例子，如组蛋白乙酰转移酶（HATs）如何促进染色质松弛，
+                                而重塑复合物进一步移动核小体，使启动子区域暴露？</p><br>
+                            <p>可能还需要区分染色质重塑和DNA甲基化的不同机制，但用户的问题只关注重塑，所以这部分可能不需要深入。但为了全面性，
+                                或许在总结时可以稍作对比。</p><br>
+                            <p>最后，整合所有信息，形成连贯的段落，确保涵盖ATP依赖的重塑复合物、组蛋白修饰、空间结构改变对转录因子接触的影响，
+                                以及可能的表观遗传记忆机制。同时，考研回答可能需要强调重点考点，例如SWI/SNF复合体的作用、染色质开放与闭合状态的转换等。</p><br>
+                        </div>
+                        <div class="answer-box">  
+                            <p>染色质重塑通过ATP驱动的核小体结构重组调控基因表达，主要机制包括：</p>
+                            <p>SWI/SNF等复合物的酶活性：利用ATP水解能源，使核小体在DNA分子上滑动或重构，暴露启动子区（如转录起始位点），促进转录因子结合。
+                                组蛋白H3K4me3等修饰标记会通过BPTF等衔接蛋白引导重塑复合物的靶向定位（ChIP - seq实验证实）。</p>
+                            <p>染色质三维构象改变：通过CTCF介导的染色质环形成，重塑复合物（如Cohesin）将增强子区域拉近至靶基因启动子，
+                                空间重组允许远程调控元件发挥作用（3C/Hi - C技术验证）。</p>
+                            <p>组蛋白变体置换：H2A.Z在基因调控区的动态插入会降低核小体稳定性，重塑复合物（如INO80）通过置换变体调控RNA聚合酶II延伸效率
+                                （MNase - seq检测核小体定位偏移）。</p>
+                            <p>此过程与组蛋白乙酰化（如H3K27ac）协同作用，共同维持DNA可及性。考研真题（如中科院2021年第8题）
+                                着重考查SWI/SNF复合物的ATP酶功能及对染色质高级结构的影响。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>基于Dify开发的检验考研生物学的专家化Agent</h1>
+            <button class="button" id="enter-button">进入Agent</button>
+        </div>
+        
+        <div id="database-support" class="iframe-container">
+            <h1>数据库支持</h1>
+            <div class="container"> 
+                <p>我们的agent系统依赖于多个数据库的支持，利用API即时获取数据库信息，以确保提供准确和全面的信息。
+                    以下是我们使用的一些主要数据库：
+                </p>
+            </div>
+            <div class="database-cards">
+                <div class="database-card">
+                    <img src="igem-logo-light.svg" alt="iGEM Logo" margin: 0 auto;>
+                    <p>iGEM致力于通过教育和竞赛推进合成生物学的成就。</p>
+                </div>
+                <div class="database-card">
+                    <img src="pubmed-logo-white.svg" alt="PubMed Logo" margin: 0 auto;>
+                    <p>PubMed致力于通过免费、用户友好的数据库促进全球对生物医学文献的访问。</p>
+                </div>
+                <div class="database-card">
+                    <img src="arxiv-logo-one-color-white.svg" alt="arXiv Logo" margin: 0 auto;>
+                    <p>arXiv致力于通过开放获取的存储库加速科学研究所的传播。</p>
+                </div>
+                <div class="database-card">
+                    <img src="Wikipedia-logo-v2-zh.svg" alt="Wikipedia Logo" margin: 0 auto;>
+                    <p>Wikipedia致力于构建一个全面的、多语言的百科全书。</p>
+                </div>
+                <div class="database-card">
+                    <img src="google-brand-color.svg" alt="Google Logo" margin: 0 auto;>
+                    <p>Google致力于组织世界的信息并使其普遍可访问和有用。</p>
+                </div>
+            </div>
+            <!-- <div class="container">
+                <div class="image-container">
+                    <img src="igem-logo-light.svg" alt="iGEM Logo" class="svg-image" loading="lazy">
+                </div>
+                <div class="text-container">
+                    <p class="description">
+                        iGEM is dedicated to advancing achievements in synthetic biology through education and competition, 
+                        and to the development of an open, collaborative and cooperative community that strives to find solutions 
+                        for a healthier, more resilient and sustainable world.
+                    </p>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="pubmed-logo-white.svg" alt="iGEM Logo" class="svg-image" loading="lazy">
+                    </div>
+                    <div class="text-container">
+                        <p class="description">
+                            PubMed is dedicated to facilitating global access to biomedical literature through a free, 
+                            user-friendly database, and to the advancement of evidence-based research by providing researchers, 
+                            healthcare professionals, and students with comprehensive, 
+                            up-to-date scientific resources that drive innovation in medicine and public health.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="arxiv-logo-one-color-white.svg" alt="iGEM Logo" class="svg-image" loading="lazy">
+                    </div>
+                    <div class="text-container">
+                        <p class="description">
+                            arXiv is dedicated to accelerating the dissemination of scientific research through an open-access repository, 
+                            and to the promotion of academic collaboration by enabling researchers across disciplines to freely share preprint papers, 
+                            sparking new ideas and driving the frontiers of knowledge.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="Wikipedia-logo-v2-zh.svg" alt="iGEM Logo" class="svg-image" loading="lazy">
+                    </div>
+                    <div class="text-container">
+                        <p class="description">
+                            Wikipedia is dedicated to building a comprehensive, 
+                            multilingual encyclopedia that is freely available to all through a volunteer-driven, 
+                            collaborative platform, and to the preservation and spread of human knowledge by providing accurate, 
+                            verifiable information that enriches education and informs global understanding.
+                        </p>
+                    </div>
+                </div> <div class="container">
+                    <div class="image-container">
+                        <img src="google-brand-color.svg" alt="iGEM Logo" class="svg-image" loading="lazy">
+                    </div>
+                    <div class="text-container">
+                        <p class="description">
+                            Google is dedicated to organizing the world's information and making it universally accessible and useful 
+                            through powerful search technology, and to the empowerment of individuals and businesses worldwide by delivering relevant, 
+                            reliable content that fosters knowledge sharing and economic growth.
+                        </p>
+                    </div>
+                </div>  -->
+        </div>
+        
+        <div class="iframe-container">
+            <h1 id="aboutus">关于我们</h1>
+            <div class="database-cards">
+                <div class="database-card">
+                    <img src="image1.jpeg" alt="iGEM Logo" margin: 0 auto;>
+                    <P>黄千城</P><br>
+                    <p>总体设计规划<br>构建底层代码和Agent</p>
+                </div>
+                <div class="database-card">
+                    <img src="image2.jpeg" alt="PubMed Logo" margin: 0 auto;>
+                    <P>武牧云</P><br>
+                    <p>分析方案可行性<br>报告撰写和PPT制作</p>
+                </div>
+                <div class="database-card">
+                    <img src="image3.jpeg" alt="arXiv Logo" margin: 0 auto;>
+                    <P>Kevin</P><br>
+                    <p>负责辅助建模和数据统计<br>答辩</p>
+                </div>
+            </div>
+        </div>
+        <div class="iframe-container">
+            <div class="database-cards">
+                <div class="database-card">
+                    <img src="image4.jpeg" alt="Wikipedia Logo" margin: 0 auto;>
+                    <P>柳德淏</P><br>
+                    <p>负责辅助建模和数据统计<br>答辩</p>
+                </div>
+                <div class="database-card">
+                    <img src="e98c7e462d68833de313d9e1004fdad.jpg" alt="Google Logo" margin: 0 auto;>
+                    <P>周凯</P><br>
+                    <p class="description">负责网页设计<br>前端部署</p>
+                </div>
+                <div class="database-card">
+                    <img src="image6.jpeg" alt="Google Logo" margin: 0 auto;>
+                    <P>王奕博</P><br>
+                    <p class="description">答辩</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="iframe-container">
+            <h1 id="contactus">联系我们</h1>
+            <div class="container">
+                <div class="image-container">
+                    <img src="QQ.png" alt="QQ" class="svg-image" loading="lazy">
+                </div>
+                <div class="text-container">
+                   <p class="description" margin:0 auto;>
+                      扫码添加负责人联系方式
+                 </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 My Website. All rights reserved.
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">隐私政策</a>
+            <a href="#">服务条款</a>
+        </p>    
+    </footer>
+    
+    <script src="/igem/script.js"></script>
+</body>
+</html>
